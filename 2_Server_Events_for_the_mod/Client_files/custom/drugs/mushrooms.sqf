@@ -1,4 +1,9 @@
 
+/*
+ Basic code exile mod, modify by Serveratze
+*/
+
+
 private ["_player","_mushrooms"];
 
 _player = player;
