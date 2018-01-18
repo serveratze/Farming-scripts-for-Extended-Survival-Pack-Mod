@@ -2,6 +2,7 @@
  Basic code exile mod, modify by Serveratze
 */
 
+
 private ["_player","_crystal_rock"];
 
 _player = player;
@@ -21,7 +22,7 @@ if (ExileClientPlayerIsInCombat) exitWith
 };
 
             _crystal_rock = nearestObject [_player, "DDR_crystal_rock"];
-            ["text here!!!!!!!!!!!!!!!"] spawn ExileClient_gui_baguette_show;
+            ["Mining started.."] spawn ExileClient_gui_baguette_show;
 
 			disableSerialization;
 			("ExileActionProgressLayer" call BIS_fnc_rscLayer) cutRsc ["RscExileActionProgress", "PLAIN", 1, false];
@@ -71,7 +72,7 @@ if (ExileClientPlayerIsInCombat) exitWith
 					{
 						_progressBarColor = [0.7, 0.93, 0, 1];
                         deleteVehicle _crystal_rock;
-                        ["InfoTitleAndText", ["Mining Info", "text here!!!!!!!!!!!!!!!"]] call ExileClient_gui_toaster_addTemplateToast;
+                        ["InfoTitleAndText", ["Mining Info", "It was very exhausting, but they found some crystal."]] call ExileClient_gui_toaster_addTemplateToast;
 
 						_itemsAdded = 0;
                         _itemsAdd = 4 + floor ( random 4 );
@@ -91,7 +92,7 @@ if (ExileClientPlayerIsInCombat) exitWith
 					{ 
 						[
 							"InfoTitleAndText", 
-							["Mining Info", "text here!!!!!!!!!!!!!!!"]
+							["Mining Info", "Do not move."]
 						] call ExileClient_gui_toaster_addTemplateToast;
 						_progressBarColor = [0.82, 0.82, 0.82, 1];
 					};
