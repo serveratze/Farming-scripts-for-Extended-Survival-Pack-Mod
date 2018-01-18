@@ -9,7 +9,7 @@ class CfgInteractionMenus
         {
             class HarvestWeed: ExileAbstractAction
             {
-                title = "text here!!!!!!!!!!!!!!!";
+                title = "Harvest the Weed";
                 condition = "('Exile_Item_Knife' in (magazines player) && !ExilePlayerInSafezone)";
                 action = "_this call DDR_fnc_Weed";
             };
@@ -24,7 +24,7 @@ class CfgInteractionMenus
         {
             class HarvestMushrooms: ExileAbstractAction
             {
-                title = "text here!!!!!!!!!!!!!!!";
+                title = "Harvest the Mushrooms";
                 condition = "('Exile_Item_Knife' in (magazines player) && !ExilePlayerInSafezone)";
                 action = "_this call DDR_fnc_Mushrooms";
             };
@@ -39,7 +39,7 @@ class CfgInteractionMenus
         {
             class materials1: ExileAbstractAction
             {
-                title = "text here!!!!!!!!!!!!!!!";
+                title = "Reduce raw materials";
                 condition = "('DDR_Item_Pickaxe' in (magazines player) && !ExilePlayerInSafezone)";
                 action = "_this call DDR_fnc_Ore_Mining";
             };
@@ -54,7 +54,7 @@ class CfgInteractionMenus
         {
             class materials2: ExileAbstractAction
             {
-                title = "text here!!!!!!!!!!!!!!!";
+                title = "Reduce raw materials";
                 condition = "('DDR_Item_Pickaxe' in (magazines player) && !ExilePlayerInSafezone)";
                 action = "_this call DDR_fnc_Crystal_Mining";
             };
