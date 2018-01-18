@@ -1,6 +1,3 @@
-/*
- Basic code exile mod, modify by Serveratze
-*/
 
 private ["_player","_mushrooms"];
 
@@ -21,7 +18,7 @@ if (ExileClientPlayerIsInCombat) exitWith
 };
 
             _mushrooms = nearestObject [_player, "DDR_Mushrooms"];
-            ["text here!!!!!!!!!!!!!!!"] spawn ExileClient_gui_baguette_show;
+            ["Harvesting crops started.."] spawn ExileClient_gui_baguette_show;
 
 			_animation = "Exile_Acts_RepairVehicle01_Animation01";
 			disableSerialization;
@@ -73,7 +70,7 @@ if (ExileClientPlayerIsInCombat) exitWith
 					{
 						_progressBarColor = [0.7, 0.93, 0, 1];
                         deleteVehicle _mushrooms;
-                        ["InfoTitleAndText", ["Mushrooms Info","text here!!!!!!!!!!!!!!!"]] call ExileClient_gui_toaster_addTemplateToast;
+                        ["InfoTitleAndText", ["Mushrooms Info", "You hands are all moist, but you harvested some good magic mushrooms! Go sell the mushrooms at Trader!"]] call ExileClient_gui_toaster_addTemplateToast;
 
                         _player addItem "DDR_Item_Mushrooms"
 
@@ -82,7 +79,7 @@ if (ExileClientPlayerIsInCombat) exitWith
 					{ 
 						[
 							"InfoTitleAndText", 
-							["Mushrooms Info", "text here!!!!!!!!!!!!!!!"]
+							["Mushrooms Info", "Do not move."]
 						] call ExileClient_gui_toaster_addTemplateToast;
 						_progressBarColor = [0.82, 0.82, 0.82, 1];
 					};
