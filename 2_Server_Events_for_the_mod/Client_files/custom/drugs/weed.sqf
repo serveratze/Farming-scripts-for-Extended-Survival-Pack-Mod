@@ -2,6 +2,7 @@
  Basic code exile mod, modify by Serveratze
 */
 
+
 private ["_player","_weed"];
 
 _player = player;
@@ -21,7 +22,7 @@ if (ExileClientPlayerIsInCombat) exitWith
 };
 
             _weed = nearestObject [_player, "DDR_Weed_Plant"];
-            ["text here!!!!!!!!!!!!!!!"] spawn ExileClient_gui_baguette_show;
+            ["Harvesting crops started.."] spawn ExileClient_gui_baguette_show;
 
 			disableSerialization;
 			("ExileActionProgressLayer" call BIS_fnc_rscLayer) cutRsc ["RscExileActionProgress", "PLAIN", 1, false];
@@ -71,7 +72,7 @@ if (ExileClientPlayerIsInCombat) exitWith
 					{
 						_progressBarColor = [0.7, 0.93, 0, 1];
                         deleteVehicle _weed;
-                        ["InfoTitleAndText", ["Weed Info", "text here!!!!!!!!!!!!!!!"]] call ExileClient_gui_toaster_addTemplateToast;
+                        ["InfoTitleAndText", ["Weed Info", "You hands are all sticky, but you harvested some good shit! Go sell the weed at Trader!"]] call ExileClient_gui_toaster_addTemplateToast;
 
                         _player addItem "DDR_Item_Drugs_Weed"
 
@@ -80,7 +81,7 @@ if (ExileClientPlayerIsInCombat) exitWith
 					{ 
 						[
 							"InfoTitleAndText", 
-							["Weed Info", "text here!!!!!!!!!!!!!!!"]
+							["Weed Info", "Do not move."]
 						] call ExileClient_gui_toaster_addTemplateToast;
 						_progressBarColor = [0.82, 0.82, 0.82, 1];
 					};
