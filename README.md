@@ -1,6 +1,7 @@
 # Farming-scripts-for-Extended-Survival-Pack-Mod
 Weed Farm, Magic Mushrooms Farm, Mining ore and crystal install
 
+/////////////////////////////// ////////// Exile mod 1.0.4 'Pineapple' Compatible ////////// ///////////////////////////////
 
 Client files!!!!!!!
 
