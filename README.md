@@ -135,3 +135,8 @@ open your exile_server_config.pbo and add that in your config.cpp in the class E
 		};
 };
 
+---------------------------------------------------------------------------------
+
+https://www.paypal.com/donate/?hosted_button_id=382PYN28XF3WU
+
+---------------------------------------------------------------------------------
